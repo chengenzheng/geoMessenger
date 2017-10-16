@@ -15,6 +15,11 @@
 		2733909A1F91424A00ED33DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273390981F91424A00ED33DB /* LaunchScreen.storyboard */; };
 		273390A51F91424A00ED33DB /* geoMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273390A41F91424A00ED33DB /* geoMessengerTests.swift */; };
 		273390B01F91424A00ED33DB /* geoMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273390AF1F91424A00ED33DB /* geoMessengerUITests.swift */; };
+		273390BE1F9168C900ED33DB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273390BD1F9168C900ED33DB /* Message.swift */; };
+		273390C21F916D5200ED33DB /* MapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273390C11F916D5200ED33DB /* MapViewExtension.swift */; };
+		279FAE131F91A9C100AA47D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279FAE121F91A9BF00AA47D3 /* GoogleService-Info.plist */; };
+		27A5FFE71F92A3790050AACF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A5FFE61F92A3790050AACF /* CameraViewController.swift */; };
+		483606C40733A3ABA219231E /* Pods_geoMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FD751E9D410DB23430AF56 /* Pods_geoMessenger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B7A995B9635384C9BC02408 /* Pods-geoMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoMessenger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geoMessenger/Pods-geoMessenger.debug.xcconfig"; sourceTree = "<group>"; };
 		2733908A1F91424A00ED33DB /* geoMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geoMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2733908D1F91424A00ED33DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2733908F1F91424A00ED33DB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		273390AB1F91424A00ED33DB /* geoMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = geoMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		273390AF1F91424A00ED33DB /* geoMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geoMessengerUITests.swift; sourceTree = "<group>"; };
 		273390B11F91424A00ED33DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		273390BD1F9168C900ED33DB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		273390C11F916D5200ED33DB /* MapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewExtension.swift; sourceTree = "<group>"; };
+		279FAE121F91A9BF00AA47D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		27A5FFE61F92A3790050AACF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		47FD751E9D410DB23430AF56 /* Pods_geoMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geoMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69374CF57F5035D04BB8E11C /* Pods-geoMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoMessenger.release.xcconfig"; path = "Pods/Target Support Files/Pods-geoMessenger/Pods-geoMessenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				483606C40733A3ABA219231E /* Pods_geoMessenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,8 @@
 				273390A31F91424A00ED33DB /* geoMessengerTests */,
 				273390AE1F91424A00ED33DB /* geoMessengerUITests */,
 				2733908B1F91424A00ED33DB /* Products */,
+				71C95BF47DDB8A7293D13814 /* Pods */,
+				98D81C3AAF6A9B821769CA7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +114,7 @@
 		2733908C1F91424A00ED33DB /* geoMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				279FAE121F91A9BF00AA47D3 /* GoogleService-Info.plist */,
 				2733908D1F91424A00ED33DB /* AppDelegate.swift */,
 				2733908F1F91424A00ED33DB /* FirstViewController.swift */,
 				273390911F91424A00ED33DB /* SecondViewController.swift */,
@@ -106,6 +122,9 @@
 				273390961F91424A00ED33DB /* Assets.xcassets */,
 				273390981F91424A00ED33DB /* LaunchScreen.storyboard */,
 				2733909B1F91424A00ED33DB /* Info.plist */,
+				273390BD1F9168C900ED33DB /* Message.swift */,
+				273390C11F916D5200ED33DB /* MapViewExtension.swift */,
+				27A5FFE61F92A3790050AACF /* CameraViewController.swift */,
 			);
 			path = geoMessenger;
 			sourceTree = "<group>";
@@ -128,6 +147,23 @@
 			path = geoMessengerUITests;
 			sourceTree = "<group>";
 		};
+		71C95BF47DDB8A7293D13814 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B7A995B9635384C9BC02408 /* Pods-geoMessenger.debug.xcconfig */,
+				69374CF57F5035D04BB8E11C /* Pods-geoMessenger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98D81C3AAF6A9B821769CA7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47FD751E9D410DB23430AF56 /* Pods_geoMessenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 273390B41F91424A00ED33DB /* Build configuration list for PBXNativeTarget "geoMessenger" */;
 			buildPhases = (
+				DDCC04EABE0E940A2F86C2F9 /* [CP] Check Pods Manifest.lock */,
 				273390861F91424A00ED33DB /* Sources */,
 				273390871F91424A00ED33DB /* Frameworks */,
 				273390881F91424A00ED33DB /* Resources */,
+				E1563754A81BCDFFF281AB28 /* [CP] Embed Pods Frameworks */,
+				AF709387D198E4201A5EDA7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2733909A1F91424A00ED33DB /* LaunchScreen.storyboard in Resources */,
+				279FAE131F91A9C100AA47D3 /* GoogleService-Info.plist in Resources */,
 				273390971F91424A00ED33DB /* Assets.xcassets in Resources */,
 				273390951F91424A00ED33DB /* Main.storyboard in Resources */,
 			);
@@ -257,14 +297,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF709387D198E4201A5EDA7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geoMessenger/Pods-geoMessenger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDCC04EABE0E940A2F86C2F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-geoMessenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1563754A81BCDFFF281AB28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-geoMessenger/Pods-geoMessenger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geoMessenger/Pods-geoMessenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		273390861F91424A00ED33DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				273390921F91424A00ED33DB /* SecondViewController.swift in Sources */,
+				273390BE1F9168C900ED33DB /* Message.swift in Sources */,
 				2733908E1F91424A00ED33DB /* AppDelegate.swift in Sources */,
+				273390C21F916D5200ED33DB /* MapViewExtension.swift in Sources */,
 				273390901F91424A00ED33DB /* FirstViewController.swift in Sources */,
+				27A5FFE71F92A3790050AACF /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,9 +533,11 @@
 		};
 		273390B51F91424A00ED33DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7A995B9635384C9BC02408 /* Pods-geoMessenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEW6T6TFJQ;
 				INFOPLIST_FILE = geoMessenger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "chengen-zheng.geoMessenger";
@@ -442,9 +549,11 @@
 		};
 		273390B61F91424A00ED33DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69374CF57F5035D04BB8E11C /* Pods-geoMessenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEW6T6TFJQ;
 				INFOPLIST_FILE = geoMessenger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "chengen-zheng.geoMessenger";
