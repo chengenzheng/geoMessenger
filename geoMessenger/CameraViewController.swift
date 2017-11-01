@@ -8,17 +8,18 @@
 
 import UIKit
 import Firebase
+import Foundation
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     @IBOutlet weak var imgPhoto: UIImageView!
     
-    //var storageRef: StorageReference!
-    //func configureStorage() {
-    //    let storageUrl = FirebaseApp.app()?.options.storageBucket
-    //    storageRef = Storage.storage().reference(forURL: "gs://" + storageUrl!)
-    //}
+    var storageRef: StorageReference!
+    func configureStorage() {
+        let storageUrl = FirebaseApp.app()?.options.storageBucket
+        storageRef = Storage.storage().reference(forURL: "gs://" + storageUrl!)
+    }
     
     @IBAction func btnSavePhoto_Tap(_ sender: UIBarButtonItem) {
         let imageData = UIImageJPEGRepresentation(imgPhoto.image!, 0.6)
@@ -27,18 +28,35 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let ac = UIAlertController(title: "Photo Saved!", message: "Your photo was saved successfully", preferredStyle:  .alert)
         ac .addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
-        //let guid = "test_id"
-        //let imagePath = "\(guid)/\(Int(Date.timeIntervalSinceReferenceDate * 1000)).jpg"
-        //let metadata = StorageMetadata()
-       // metadata.contentType = "image/jpeg"
-        //self.storageRef.child(imagePath)
-         //    .put(imageData!, metadata: metadata) { [weak self] (metadata, error) in
-         //       if let error = error {
-        //            print("Error uploading: \(error)")
-         //           return
-         //       }
-                
-      //  }
+        let guid = "test_id"
+        let imagePath = "\(guid)/\(Int(Date.timeIntervalSinceReferenceDate * 1000)).jpg"
+        let metadata = StorageMetadata()
+       metadata.contentType = "image/jpeg"
+        
+        if imageData! == nil{ print("imageData is empty")}
+        
+        // Upload the file to the path "images/rivers.jpg"
+        let uploadTask = storageRef.child(imagePath).putData(imageData!, metadata: nil) { (metadata, error) in
+            guard let metadata = metadata else {
+                // Uh-oh, an error occurred!
+                return
+            }
+            // Metadata contains file metadata such as size, content-type, and download URL.
+            let downloadURL = metadata.downloadURL
+            print(downloadURL)
+        }
+        
+        
+        
+//        self.storageRef.child(imagePath)
+//        .putData(imageData!, metadata: metadata)
+//             { [weak self] (metadata, error) in
+//          if let error = error {
+//                   print("Error uploading: \(error)")
+//                  return
+//              }
+        
+ //       }
     }
     
     @IBAction func btnTakePhoto_TouchUpInside(_ sender: UIButton) {
